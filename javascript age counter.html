@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-form</title>
+</head>
+<body>
+    <h2> form validation </h2>
+    <div class="container">
+  <label for="age"> enter your age: </label>
+  <input type="number" name="enter your age" id="age">
+  <br><br><br>
+  <label for="weight"> enter your weight: </label>
+  <input type="number" name="enter your weight" id="weight">
+  <button onclick="calculate()"> click here</button>
+    </div>
+</body>
+<script>
+function calculate(){
+    var Age;
+    Age = parseInt(document.getElementById("age").value );
+    var Weight;
+    Weight= parseInt( document.getElementById("weight").value);
+    if( Age >=5 && Age<=7){
+        if(Weight<15){
+            alert("under weight");
+        }
+        else if (Weight>=15 && Weight<=20){
+            alert("average weight");
+        }
+        else if (Weight>20){
+            alert ("over weight");
+        }
+    }
+    if (Age>=8 && Age<=10){
+        if(Weight<21){
+            alert ("under weight");
+        }
+        else if (Weight>=21 && Weight<=25){
+            alert ("average weight");
+        }
+        else if(Weight>25){
+            alert("over weight");
+        }
+    }
+    if(Age >=11 && Age<=15){
+        if (Weight<26){
+            alert("under weight");
+        }
+        else if( Weight>=26 && Weight<=30){
+           alert("average weight");
+        }
+        else if(Weight>30){
+            alert("over weight");
+        }
+    }
+    if(Age>=16 && Age<=20){
+        if (Weight<31){
+            alert("under weight");
+    }
+    else if( Weight>=31 && Weight<=40){
+        alert("average weight");
+    }
+    else if(Weight>40){
+        alert("over weight");
+    }   
+}
+else{
+    alert("plaese enter valid number");
+}
+}
+</script>
+</html>
